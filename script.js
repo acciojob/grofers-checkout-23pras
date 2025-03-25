@@ -10,13 +10,13 @@ const getSum = () => {
     total += parseInt(price.textContent);
   });
 
-  const existingTotalRow = document.getElementById("total-row");
+  const existingTotalRow = document.getElementById("ans");
   if (existingTotalRow) {
     existingTotalRow.remove();
   }
 
   let final = document.createElement('tr');
-  final.id = "total-row";
+  final.id = "ans";
   final.innerHTML = `<td colspan="2">Total: Rs. ${total}</td>`;
 
   let table = document.querySelector("table");
